@@ -1,0 +1,7 @@
+\c APP
+
+CREATE TABLE migrations (
+  id SERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  executed_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
